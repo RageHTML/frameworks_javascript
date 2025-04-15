@@ -18,8 +18,10 @@
  
     $( document ).ready(function() {
         $( "a" ).click(function( event ) {
-            alert( "Essa pagina vai te levar para o youtube" );
+
             event.preventDefault();
+
+            $( this ).hide( "fast" )
         });
 
         $( "a" ).addClass( "test" );
