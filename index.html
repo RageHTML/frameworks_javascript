@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Framework</title>
+    <style>
+
+        a.test {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://youtube.com/">YouTube</a>
+    <script src="jquery.js"></script>
+    <script>
+ 
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            alert( "Essa pagina vai te levar para o youtube" );
+            event.preventDefault();
+        });
+
+        $( "a" ).addClass( "test" );
+    });
+ 
+    </script>
+</body>
+</html>
